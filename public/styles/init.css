@@ -3,6 +3,7 @@
 @import url('./introduction.css');
 @import url('./page-one.css');
 @import url('./page-two.css');
+@import url('./page-three.css');
 
 body{
     transition: all ease 1s;
@@ -12,26 +13,27 @@ body{
     display: none;
 }
 
-body:not(.body-page-three) .content-page-3,
-body:not(.body-page-three) .content-page-3 > p,
-body:not(.body-page-three) .content-page-3 > div{
+body:not(.body-page-four) .content-page-4,
+body:not(.body-page-four) .content-page-4 > h2,
+body:not(.body-page-four) .content-page-4 > div:nth-child(2) {
     opacity: 0;
 }
-
-body.body-page-three{
-    background-color: lightblue;
+body.body-page-four{
+    background-color: lightcoral;
     transition: background-color ease-in 1s;
 }
 
-body.body-page-three .content-page-3{
+body.body-page-four .content-page-4{
     opacity: 1;
     transition: opacity ease 1s;
 }
-body.body-page-three .content-page-3 > p{
+
+body.body-page-four .content-page-4 > h2:first-child{
     opacity: 1;
-    transition: opacity ease 1s 2s;
+    transition: opacity ease 1s 2s, box-shadow ease 1s 2s;
+    box-shadow: 5px 2px 0px white, -5px -4px 0px white;
 }
-body.body-page-three .content-page-3 > div{
+body.body-page-four .content-page-4 > div:nth-child(2){
     opacity: 1;
     transition: opacity ease 1s 4s;
 }

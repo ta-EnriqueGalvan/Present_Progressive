@@ -1,0 +1,28 @@
+
+body:not(.body-page-three) .content-page-3,
+body:not(.body-page-three) .content-page-3 > p,
+body:not(.body-page-three) .content-page-3 > div{
+    opacity: 0;
+}
+
+body.body-page-three{
+    background-color: lightblue;
+    transition: background-color ease-in 1s;
+}
+
+body.body-page-three .content-page-3{
+    opacity: 1;
+    transition: opacity ease 1s;
+}
+body.body-page-three .content-page-3 > p:first-child{
+    opacity: 1;
+    transition: opacity ease 1s 2s;
+}
+body.body-page-three .content-page-3 > div{
+    opacity: 1;
+    transition: opacity ease 1s 4s;
+}
+body.body-page-three .content-page-3 > p:last-child{
+    opacity: 1;
+    transition: opacity ease 1s 8s;
+}

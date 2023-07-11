@@ -10,3 +10,9 @@ document.querySelector('.hide-page-2').addEventListener('click', function () {
     //$('.content-page-3').addClass('show');
     document.querySelector('body').classList.replace('body-page-two', 'body-page-three');
 });
+document.querySelector('.hide-page-3').addEventListener('click', function () {
+    $(document.querySelector('.content-page-3')).fadeOut();
+    //$('.content-page-3').removeClass('hide');
+    //$('.content-page-3').addClass('show');
+    document.querySelector('body').classList.replace('body-page-three', 'body-page-four');
+});
