@@ -4,6 +4,7 @@
 @import url('./page-one.css');
 @import url('./page-two.css');
 @import url('./page-three.css');
+@import url('./page-four.css');
 
 body{
     transition: all ease 1s;
@@ -13,27 +14,26 @@ body{
     display: none;
 }
 
-body:not(.body-page-four) .content-page-4,
-body:not(.body-page-four) .content-page-4 > h2,
-body:not(.body-page-four) .content-page-4 > div:nth-child(2) {
-    opacity: 0;
-}
-body.body-page-four{
-    background-color: lightcoral;
+body.body-page-five{
+    background-color: thistle;
     transition: background-color ease-in 1s;
 }
 
-body.body-page-four .content-page-4{
-    opacity: 1;
-    transition: opacity ease 1s;
+body:not(.body-page-five) .content-page-5,
+body.body-page-five div.content-page-5 h1,
+body.body-page-five div.content-page-5 div{
+    opacity: 0;
 }
 
-body.body-page-four .content-page-4 > h2:first-child{
-    opacity: 1;
-    transition: opacity ease 1s 2s, box-shadow ease 1s 2s;
-    box-shadow: 5px 2px 0px white, -5px -4px 0px white;
+body.body-page-five div.content-page-5 h1 {
+    color: #724672;
 }
-body.body-page-four .content-page-4 > div:nth-child(2){
+body.body-page-five div.content-page-5 h1 {
+    opacity: 1;
+    transition: opacity ease 1s 2s;
+}
+
+body.body-page-five div.content-page-5 div {
     opacity: 1;
     transition: opacity ease 1s 4s;
 }

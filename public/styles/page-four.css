@@ -1,0 +1,74 @@
+
+body:not(.body-page-four) .content-page-4,
+body:not(.body-page-four) .content-page-4 > h2,
+body:not(.body-page-four) .content-page-4 > div:nth-child(2),
+body:not(.body-page-four) .content-page-4 > div:nth-child(2) > div:nth-child(2),
+body:not(.body-page-four) .content-page-4 > div:nth-child(2) > div:nth-child(3) {
+    opacity: 0;
+}
+body.body-page-four{
+    background-color: lightcoral;
+    transition: background-color ease-in 1s;
+}
+
+body.body-page-four .content-page-4{
+    opacity: 1;
+    transition: opacity ease 1s;
+}
+
+body.body-page-four .content-page-4 > h2:first-child{
+    opacity: 1;
+    transition: opacity ease 1s 2s, box-shadow ease 1s 2s;
+    box-shadow: 5px 2px 0px white, -5px -4px 0px white;
+}
+body.body-page-four .content-page-4 > div:nth-child(2){
+    opacity: 1;
+    transition: opacity ease 1s 5s;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) > div:nth-child(2){
+    opacity: 1;
+    transition: opacity ease 1s 8s;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) > div:nth-child(3){
+    opacity: 1;
+    transition: opacity ease 1s 15s;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table{
+    width: max-content;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:first-child:hover > td:nth-child(1),
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:first-child:hover > td:nth-child(2){
+    color: white;
+    background-color: cadetblue;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(2):hover > td:nth-child(1),
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(2):hover > td:nth-child(2){
+    color: white;
+    background-color: brown;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(3):hover > td:nth-child(1),
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(3):hover > td:nth-child(2){
+    color: white;
+    background-color: darkmagenta;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(4):hover > td:nth-child(1),
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(4):hover > td:nth-child(2){
+    color: white;
+    background-color: brown;
+}
+
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(6):hover > td:nth-child(1){
+    color: white;
+    background-color: brown;    
+}
+body.body-page-four .content-page-4 > div:nth-child(2) table tbody tr:nth-child(6):hover > td:nth-child(2){
+    color: white;
+    background-color: cadetblue;
+}
