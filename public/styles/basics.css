@@ -1,0 +1,38 @@
+/* Importamos la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Definimos la clase "fuente-personalizada" */
+.montserrat {
+    /* Asignamos la fuente Quicksand a la clase */
+    font-family: 'Montserrat', sans-serif;
+    /* Ajustamos el tamaño de la fuente */
+    font-size: medium;
+    /* Ajustamos el color de la fuente */
+    color: initial;
+}
+
+@font-face {
+    font-family:    'Montserrat';
+    src:            url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+                    url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight:    normal;
+    font-style:     normal;
+  }
+  
+  /* Definimos la clase "fuente-personalizada" */
+.caveat {
+    /* Asignamos la fuente Quicksand a la clase */
+    font-family: 'Caveat', sans-serif;
+    /* Ajustamos el tamaño de la fuente */
+    font-size: medium;
+    /* Ajustamos el color de la fuente */
+    color: initial;
+}
+
+@font-face {
+    font-family:    'Caveat';
+    src:            url('../fonts/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+    font-weight:    normal;
+    font-style:     normal;
+  }
+  

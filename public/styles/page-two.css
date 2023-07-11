@@ -1,0 +1,94 @@
+
+body.body-page-two{
+    animation-name: student-expression-sad;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    background: linear-gradient(180deg, rgba(74,70,148,1) 0%, rgba(112,112,175,1) 25%, rgba(162,162,199,1) 50%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: auto 200%;
+    background-position-y: 0%;
+}
+body:not(.body-page-two) > .content-page-2 > div.bg-shy,
+body:not(.body-page-two) > .content-page-2 > div > div > p.caveat, 
+body:not(.body-page-two) > .content-page-2 > div > div > div.text-white,
+body:not(.body-page-two) > .content-page-2 > div > div > div > button
+{
+    opacity: 0;
+}
+body.body-page-two > .content-page-2 > div > div > p.caveat {
+    opacity: 1;
+    transition: opacity ease-in 2s 2s;
+}
+
+body.body-page-two > .content-page-2 > div > div > div.text-white {
+    opacity: 1;
+    transition: opacity ease-in 1s 5s;
+}
+
+body.body-page-two > .content-page-2 > div > div > div > button {
+    opacity: 1;
+    transition: opacity ease-in 1s 8s;
+}
+#modal_TOBE ul > li:nth-child(2):hover,
+#modal_TOBE ul > li:nth-child(3):hover,
+#modal_TOBE ul > li:nth-child(4):hover{
+    background-color: transparent;
+    transition: background-color ease 0.4s;
+}
+#modal_TOBE ul > li:nth-child(2):hover{
+    color: white;
+    background-color: cadetblue;
+}
+
+#modal_TOBE ul > li:nth-child(3):hover,
+#modal_TOBE .wrong-use > span:last-child{
+    color: white;
+    background-color: brown;
+}
+
+#modal_TOBE ul > li:nth-child(4):hover,
+#modal_TOBE .wrong-use > span:nth-child(2){
+    color: white;
+    background-color: darkmagenta;
+}
+#modal_TOBE .modal-body > p.wrong-use{
+    line-height: 2.5rem;
+}
+body.body-page-two > .content-page-2 > div.shy-bg{
+    background-image: url(../media/shy-bg.png);
+    height: 4rem;
+    width: 100%;
+    background-repeat-x: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: student-expression-sad-lines;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: opacity ease 1s;
+    opacity: 0.1;
+}
+
+@keyframes student-expression-sad {
+    from{
+        background-position-y: 300%;
+    }
+    to{
+        background-position-y: 0%;
+    }
+}
+
+@keyframes student-expression-sad-lines {
+    from{
+        background-position-y: 0%;
+    }
+    to{
+        background-position-y: 100%;
+    }
+}

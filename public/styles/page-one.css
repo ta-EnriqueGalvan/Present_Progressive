@@ -1,0 +1,39 @@
+
+body.body-page-one{
+    background-color: #fce9cd;
+    transition: background-color ease-in 1s;
+}
+body:not(.body-page-one) .content-page-1,
+body .content-page-1 .caveat,
+body .content-page-1 > div > div > p:nth-child(1),
+body .content-page-1 > div > div > div,
+body .content-page-1 > button
+{
+    opacity: 0;
+}
+
+body.body-page-one div.content-page-1 {
+    box-shadow: 1px 1px 1px gray;
+    opacity: 1;
+    transition: opacity ease 1s 2s;
+}
+
+body.body-page-one div.content-page-1 .caveat {
+    opacity: 1;
+    transition: opacity ease 1s 4s;
+}
+
+body.body-page-one div.content-page-1 > div > div > p:nth-child(1) {
+    opacity: 1;
+    transition: opacity ease 1s 8s;
+}
+
+body.body-page-one div.content-page-1 > div > div > div {
+    opacity: 1;
+    transition: opacity ease 1s 10s;
+}
+
+body.body-page-one div.content-page-1 > button {
+    opacity: 1;
+    transition: opacity ease 1s 20s;
+}

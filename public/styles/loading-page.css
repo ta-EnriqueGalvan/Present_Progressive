@@ -1,0 +1,70 @@
+.loading-page{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: ghostwhite;
+    z-index: 10;
+}
+
+.loading-page > div > div > h3 > b > span.loading-title{
+    animation-name: loading-text-title;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    background-color: blueviolet;
+    opacity: 1;
+}
+
+.loading-page > div > div > .link-underline {
+    opacity: 0;
+}
+.loading-page > div > div > .link-underline.show {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+.loading-page > div > div > .link-underline:not(.hide) > span > i.bi-arrow-right, i.bi-arrow-right {
+    margin-left: 0.5rem;
+    animation-name: show-continue-button;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading-text-title {
+  0%{
+    color: transparent;
+    background-color: transparent;
+    opacity: 0;
+} 
+30%{
+    color: transparent;
+    background-color: blueviolet;
+    opacity: 0;
+}
+70%{
+    color: transparent;
+    background-color: blueviolet;
+    opacity: 1;
+}
+100%{
+    color: whitesmoke;
+    background-color: blueviolet;
+    opacity: 1 !important;
+  } 
+}
+
+@keyframes show-continue-button {
+    0%{
+        margin-left: 0.5rem;
+    }
+    50%{
+        margin-left: 1.5rem; 
+    }
+    100%{
+        margin-left: 0.5rem;
+    }
+}
